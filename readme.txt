@@ -1,0 +1,1 @@
+this is a program that shows how classes are made in javascript and also implements the three js framework to show augmented reality
