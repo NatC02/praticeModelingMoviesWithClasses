@@ -1,17 +1,17 @@
 class superHeroMovies {
 
-	isSequel = true || false;
-    isStreamed = true || false;
+	isSequel = true;
+    isStreamed = true;
 
-	constructor(props) {
-		this.isSequel = props.isSequel;
-        this.isStreamed = props.isStreamed;
-		this.name = props.name;
-        this.releaseDate = props.releaseDate;
-		this.catergory = props.catergory;
-		this.runtimeMinutes = props.runtime;
-		this.cast = props.cast;
-		this.ratingIMBD = props.ratingIMBD;
+	constructor() {
+		this.isSequel = isSequel;
+        this.isStreamed = isStreamed;
+		this.nameOfMovie = nameOfMovie;
+        this.releaseDate = releaseDate;
+		this.catergory = catergory;
+		this.runtimeMinutes = runtime;
+		this.cast = cast;
+		this.ratingIMBD = ratingIMBD;
 
     }
 
@@ -24,7 +24,7 @@ class superHeroMovies {
 	}
 
     getName() {
-        return this.name;
+        return this.nameOfMovie;
     }
 
     getreleaseDate() {
@@ -47,12 +47,16 @@ class superHeroMovies {
         return this.ratingIMBD;
     }
 
+	static getClassDescription() {
+		return "This is the super movies class and it allows you to get properrties of superhero movies";
+	}
+
 }
 
 const spidermanHomecomingProps = {
     isSequel: true,
     isStreamed: true,
-	name: 'Spiderman Homecoming',
+	nameOfMovie: 'Spiderman Homecoming',
 	releaseDate: 'July 7, 2017',
 	catergory: 'Finction',
 	runtime: 133,
@@ -80,7 +84,7 @@ class dcSuperHeroMovies extends superHeroMovies {
 const zackSnydersJusticeLeagueMovieProps = {
 	isSequel: false,
     isStreamed: true,
-	name: 'Zack Snyders Justice League',
+	nameOfMovie: 'Zack Snyders Justice League',
 	releaseDate: 'March 18, 2021',
 	catergory: 'Finction',
 	runtimeMinutes: 242,
